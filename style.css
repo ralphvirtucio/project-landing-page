@@ -1,0 +1,38 @@
+:root {
+  --prmry-color-1: #1f2937;
+  --prmry-color-2: #e5e7eb;
+  --cta-color: #3882f6;
+  --hero-main-text-color: #f9faf8;
+  --header-logo-text-color: #f9faf8;
+
+  --hero-main-font-size: 3.5rem;
+  --hero-secondary-font-size: 1.2rem;
+  --header-logo-font-size: 2rem;
+  --header-info-font-size: 3rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
