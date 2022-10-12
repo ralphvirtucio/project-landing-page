@@ -76,10 +76,14 @@ body {
   color: #ffff;
 }
 
-.resume__hero {
+.resume__introductory {
   background-color: var(--prmry-color-1);
   color: var(--hero-main-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.resume__introductory-photo {
+  max-width: 20rem;
 }
