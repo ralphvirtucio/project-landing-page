@@ -41,12 +41,17 @@ body {
   min-height: 100vh;
 }
 
+.sm-padding-inline {
+  padding-inline: 12rem;
+}
+
 .resume__header {
   background-color: var(--prmry-color-1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding-block: 1rem;
+  padding-block-end: 5rem;
   color: #ffff;
 }
 
@@ -65,4 +70,16 @@ body {
   color: #ffffff9f;
   text-transform: uppercase;
   font-size: 0.85rem;
+}
+
+.resume__header-nav li a:visited {
+  color: #ffff;
+}
+
+.resume__hero {
+  background-color: var(--prmry-color-1);
+  color: var(--hero-main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
