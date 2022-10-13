@@ -162,5 +162,29 @@ button {
 
 .resume__quote {
   background-color: var(--prmry-color-2);
-  padding: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 8rem;
+}
+
+.resume__quote-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.resume__quote-content figcaption {
+  align-self: flex-end;
+}
+
+.steve-jobs {
+  max-width: 30%;
+  border-radius: 12px;
+}
+
+.resume__quote blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  width: 27ch;
 }
