@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 1rem;
+  padding-block: 3.5rem;
   padding-block-end: 5rem;
   color: #ffff;
 }
@@ -98,15 +98,25 @@ body {
 
 button {
   border: none;
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color: var(--cta-color);
+  padding-block: 0.8rem;
+  padding-inline: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .resume__introductory-btn {
   font-weight: bold;
   font-size: 1rem;
-  color: #fff;
+  color: #000;
+  display: flex;
+  align-items: stretch;
+  gap: 0.7rem;
+  background-color: #c0d7fc;
+}
+
+.resume__introductory-btn > span > svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .resume__hero {
@@ -187,4 +197,63 @@ button {
   font-size: 2rem;
   font-style: italic;
   width: 27ch;
+}
+
+.resume__cta {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: #3882f6;
+  color: #fff;
+  margin-inline: 10rem;
+  padding-block: 5rem;
+  padding-inline: 5rem;
+  border-radius: 10px;
+}
+
+.resume__cta-left-content > p > svg {
+  width: 1rem;
+}
+
+.resume__cta-right-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-self: center; */
+  flex: 0 0 50%;
+  gap: 1rem;
+}
+
+.form-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume__cta-email-label {
+  margin-block-end: 0.5rem;
+}
+
+.resume__cta-email-field {
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  max-width: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume__cta-feedback-label {
+  margin-block-end: 0.5rem;
+}
+
+.resume__cta-feeback-field {
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  max-width: 70%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume__submit-btn {
+  align-self: flex-start;
+  font-size: 1rem;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
 }
