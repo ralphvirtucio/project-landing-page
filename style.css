@@ -4,6 +4,8 @@
   --cta-color: #3882f6;
   --hero-main-text-color: #f9faf8;
   --header-logo-text-color: #f9faf8;
+
+  --font-family-montserrat: 'Montserrat', sans-serif;
 }
 
 html {
@@ -30,7 +32,7 @@ a {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family-montserrat);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -108,7 +110,7 @@ body {
   padding-block: 0.8rem;
   padding-inline: 1.5rem;
   border-radius: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family-montserrat);
 }
 
 .resume__introductory-btn > span > svg {
@@ -236,9 +238,9 @@ body {
 
 .form__signup-btn {
   border: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family-montserrat);
   color: #3882f6;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #fff;
 }
 
