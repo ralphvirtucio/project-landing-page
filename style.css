@@ -96,14 +96,6 @@ body {
   max-width: 30rem;
 }
 
-button {
-  border: none;
-  padding-block: 0.8rem;
-  padding-inline: 1.5rem;
-  border-radius: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .resume__introductory-btn {
   font-weight: bold;
   font-size: 1rem;
@@ -112,6 +104,11 @@ button {
   align-items: stretch;
   gap: 0.7rem;
   background-color: #c0d7fc;
+  border: none;
+  padding-block: 0.8rem;
+  padding-inline: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .resume__introductory-btn > span > svg {
@@ -201,59 +198,90 @@ button {
 
 .resume__cta {
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   background-color: #3882f6;
   color: #fff;
   margin-inline: 10rem;
   padding-block: 5rem;
   padding-inline: 5rem;
   border-radius: 10px;
+  gap: 10rem;
 }
 
 .resume__cta-left-content > p > svg {
   width: 1rem;
 }
 
-.resume__cta-right-content {
+.form__input-field {
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-self: center; */
-  flex: 0 0 50%;
-  gap: 1rem;
+  gap: 0.5rem;
+  align-items: baseline;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-inline: 0.8rem;
+  padding-block: 0.8rem;
 }
 
-.form-field-container {
+.form__label-email {
+  color: #3882f6;
+  font-size: 1.2rem;
+}
+
+.form__input-email {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.form__signup-btn {
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3882f6;
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+
+.resume__footer {
+  background-color: #1f2937;
+  padding-inline: 10rem;
+  padding-block: 5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.resume__cta-email-label {
-  margin-block-end: 0.5rem;
+.resume__footer > p {
+  color: #fff;
+  font-size: 1.2rem;
 }
 
-.resume__cta-email-field {
-  padding-block: 0.5rem;
-  padding-inline: 0.5rem;
-  max-width: 50%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-.resume__cta-feedback-label {
-  margin-block-end: 0.5rem;
+.slideInLeft {
+  animation-duration: 1s;
+  animation-name: slideInLeft;
+}
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-.resume__cta-feeback-field {
-  padding-block: 0.5rem;
-  padding-inline: 0.5rem;
-  max-width: 70%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.resume__submit-btn {
-  align-self: flex-start;
-  font-size: 1rem;
-  padding-block: 0.5rem;
-  padding-inline: 2rem;
+.slideInRight {
+  animation-duration: 1s;
+  animation-name: slideInRight;
 }

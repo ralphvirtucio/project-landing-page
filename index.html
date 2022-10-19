@@ -9,8 +9,8 @@
   </head>
   <body>
     <header class="resume__header sm-padding-inline">
-      <h1 class="resume__header-heading">Project Landing Page</h1>
-      <nav>
+      <h1 class="resume__header-heading slideInLeft">Project Landing Page</h1>
+      <nav class="slideInRight">
         <ul class="resume__header-nav">
           <li>
             <a href="#">About Me</a>
@@ -26,14 +26,14 @@
     </header>
     <div class="resume__introductory sm-padding-inline">
       <section class="resume__introductory-content">
-        <h2 class="resume__introductory-content-heading">
+        <h2 class="resume__introductory-content-heading slideInLeft">
           Welcome to My Awesome Website
         </h2>
-        <p class="resume__introductory-content-message">
+        <p class="resume__introductory-content-message slideInLeft">
           Hi, This website created from FlexBox, Keep sending those coffee so I
           can learn JavaScript and CSS Grid.
         </p>
-        <button class="resume__introductory-btn">
+        <button class="resume__introductory-btn slideInLeft">
           Buy Me a Coffee
           <span
             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -48,7 +48,7 @@
       <img
         src="./img/illustration-1.png"
         alt="Larry holding a cup of coffee"
-        class="resume__introductory-illustration"
+        class="resume__introductory-illustration slideInRight"
       />
     </div>
     <main class="resume__hero">
@@ -104,32 +104,18 @@
             </svg>
           </p>
         </div>
-        <form action="" method="post" class="resume__cta-right-content">
-          <div class="form-field-container">
-            <label class="resume__cta-email-label" for="email">Email</label>
-            <input
-              type="email"
-              class="resume__cta-email-field"
-              name="email"
-              id="email"
-              placeholder="example@gmail.com"
-            />
+        <form action="" method="post">
+          <div class="form__input-field">
+            <label class="form__label-email" for="email">Email</label>
+            <input class="form__input-email" type="email" />
+            <button class="form__signup-btn">Sign-up</button>
           </div>
-          <div class="form-field-container">
-            <label class="resume__cta-feedback-label" for="feeback"
-              >Feedback
-            </label>
-            <textarea
-              class="resume__cta-feeback-field"
-              name="feedback"
-              id="feedback"
-              cols="30"
-              rows="5"
-            ></textarea>
-          </div>
-          <button class="resume__submit-btn" type="submit">Submit</button>
         </form>
       </section>
     </main>
+
+    <footer class="resume__footer">
+      <p>Copyright &copy; The Odin Project 2022</p>
+    </footer>
   </body>
 </html>
